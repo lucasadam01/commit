@@ -1,0 +1,61 @@
+:root {
+    --background-page: black;
+
+    /*BACK BUTTON */
+    --background-back-button: white;
+    --color-back-button: rgb(255, 0, 0);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: var(--background-page);
+}
+
+footer,
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    /* width: 100%;
+    position: absolute; */
+}
+
+header {
+    background: blueviolet;
+}
+
+main {
+    background: linear-gradient(rgb(43, 211, 226),rgb(43, 86, 226));
+    color: aliceblue;
+    height: 76vh;
+
+}
+
+footer {
+    background-color: rgba(137, 43, 226, 0.267);
+    /* bottom: 0; */
+}
+
+
+/* .back_button {
+    background: var(--background-back-button);
+    color: var(--color-back-button);
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;    
+    padding: 10px;
+    width: 100px;
+    height: 5px;
+} */

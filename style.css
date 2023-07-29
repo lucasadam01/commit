@@ -1,0 +1,31 @@
+:root {
+    --background-pag: rgba(218, 200, 137, 0.699);
+    --page-button: rgb(116, 191, 235);
+    --color-page-button: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background: var(--background-pag);
+}
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    background: var(--page-button);
+    margin: 10px;
+    color: var(--color-page-button);
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
