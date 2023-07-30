@@ -1,53 +1,76 @@
 :root {
     --background-page: black;
+    
+    /* HEADER */
+    --background-header: black;
+    --color-header: white;
+    
+    /* MAIN */
+    --background-main: rgba(0, 0, 0, 0.916);
 
+    /* FOOTER */
+    --background-footer:rgb(41, 44, 44);
+    
     /*BACK BUTTON */
-    --background-back-button: white;
-    --color-back-button: rgb(255, 0, 0);
+    --background-back-button: rgb(0, 0, 0);
+    --color-back-button: rgb(255, 255, 255);
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 a {
     text-decoration: none;
+
 }
 
-body {
-    background: var(--background-page);
+ul {
+    display: flex;
+    list-style: none;
 }
+
 
 footer,
 header {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 12vh;
-    /* width: 100%;
-    position: absolute; */
 }
 
-header {
-    background: blueviolet;
+header{
+    color: var(--color-header);
+    background: var(--background-header);
+    padding: 0px 10px;
+    height: 60px;
+}
+
+nav a{
+     color: var(--color-header);
+    padding: 5px 15px;
+    margin: 10px 5px;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background: rgba(255, 0, 0, 0.566);
 }
 
 main {
-    background: linear-gradient(rgb(43, 211, 226),rgb(43, 86, 226));
+    background: var(--background-main);
     color: aliceblue;
-    height: 76vh;
-
+    height: 85.5vh;
 }
 
 footer {
-    background-color: rgba(137, 43, 226, 0.267);
-    /* bottom: 0; */
+    background-color: var(--background-footer);
+    height: 6.2vh;
 }
 
 
-/* .back_button {
-    background: var(--background-back-button);
+.back_button {
     color: var(--color-back-button);
     font-size: large;
     display: flex;
@@ -56,6 +79,11 @@ footer {
     border-radius: 10px;
     align-items: center;    
     padding: 10px;
-    width: 100px;
+    width: 60px;
     height: 5px;
-} */
+}
+
+.back_button:hover {
+    background: var(--color-back-button);
+    color: var(--background-back-button);
+}
