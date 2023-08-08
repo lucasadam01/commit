@@ -1,0 +1,114 @@
+:root {}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 300vh;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.barra {
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    background: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+.barra ul {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.barra ul li a.one {
+    background: rgb(218, 52, 52, 0.5);
+}
+.barra ul li a.two {
+    background: rgb(110, 190, 110, 0.5);
+}
+.barra ul li a.three {
+    background: rgba(113, 113, 186, 0.5);
+}
+.barra ul li a.four {
+    background: rgba(185, 185, 105, 0.5);
+}
+
+.barra ul li a{
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.barra ul li a:hover{
+    /* background: rgba(0, 0, 0, 0.548); */
+    border-radius: 10px;
+    color: white;
+}
+
+.barra ul li a.one:hover{
+    background: rgb(218, 52, 52);
+}
+.barra ul li a.two:hover{
+    background: rgb(110, 190, 110);
+}
+.barra ul li a.three:hover{
+    background: rgb(113, 113, 186);
+}
+.barra ul li a.four:hover{
+    background: rgb(185, 185, 105);
+}
+
+
+
+.botao {
+    background: rgba(0, 0, 0, 0.473);
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.botao:hover {
+    background:rgb(255, 255, 255);
+}
+
+.one, .two, .three, .four  {
+    height: 100vh;
+}
+
+div.one {
+    background: rgba(254, 0, 0);
+}
+div.two {
+    background: rgb(110, 190, 110);
+}
+div.three {
+    background: rgba(113, 113, 186);
+}
+div.four {
+    background: rgba(185, 185, 105);
+}
+
+a.botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
